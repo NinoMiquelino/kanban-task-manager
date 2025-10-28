@@ -98,8 +98,6 @@ kanban-task-manager/
 │└── modal.js                # Gerenciamento de modais
 ├──🗃️ data/
 │└── database.sql            # Estrutura do banco de dados
-└──📚 docs/
-└── setup-guide.md          # Guia de instalação
 
 ```
 
