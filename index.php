@@ -103,35 +103,69 @@ $boards = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </div>
 
+    <script src="js/app.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/api.js"></script>
+    <script src="js/drag-drop.js"></script>
     <script>
-        function openCreateBoardModal() {
-            document.getElementById('createBoardModal').classList.remove('hidden');
-            document.getElementById('createBoardModal').classList.add('flex');
+        let currentColumnId = null;
+
+        // Funções de modal
+        function openCreateTaskModal(columnId = null) {
+            currentColumnId = columnId;
+            document.getElementById('taskColumnId').value = columnId;
+            modals.openModal('createTaskModal');
         }
 
-        function closeCreateBoardModal() {
-            document.getElementById('createBoardModal').classList.add('hidden');
-            document.getElementById('createBoardModal').classList.remove('flex');
+        function closeCreateTaskModal() {
+            modals.closeActiveModal();
+            document.getElementById('createTaskForm').reset();
         }
 
-        // Form submission
-        document.getElementById('createBoardForm').addEventListener('submit', async (e) => {
+        // Form submission para criar tarefa
+        document.getElementById('createTaskForm').addEventListener('submit', async (e) => {
             e.preventDefault();
             const formData = new FormData(e.target);
             const data = Object.fromEntries(formData);
             
             try {
-                const response = await api.post('/api/boards.php', data);
+                const response = await api.post('/api/tasks.php', data);
                 if (response.success) {
-                    window.location.reload();
+                    window.location.reload(); // Recarrega para mostrar a nova tarefa
                 }
             } catch (error) {
-                console.error('Erro ao criar board:', error);
-                alert('Erro ao criar board');
+                console.error('Erro ao criar tarefa:', error);
+                app.showNotification('Erro ao criar tarefa', 'error');
             }
         });
+
+        // Função para excluir tarefa
+        async function deleteTask(taskId) {
+            const confirmed = await modals.confirm({
+                title: 'Confirmar Exclusão',
+                content: '<p class="text-gray-700">Tem certeza que deseja excluir esta tarefa?</p>',
+                type: 'danger',
+                confirmText: 'Excluir',
+                cancelText: 'Cancelar'
+            });
+            
+            if (confirmed) {
+                try {
+                    const response = await api.delete('/api/tasks.php', { taskId });
+                    if (response.success) {
+                        window.location.reload();
+                    }
+                } catch (error) {
+                    console.error('Erro ao excluir tarefa:', error);
+                    app.showNotification('Erro ao excluir tarefa', 'error');
+                }
+            }
+        }
+
+        // Função para editar tarefa (placeholder - pode ser implementada depois)
+        function editTask(taskId) {
+            app.showNotification('Funcionalidade de edição em desenvolvimento', 'info');
+        }
     </script>
 </body>
 </html>
