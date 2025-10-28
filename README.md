@@ -408,7 +408,7 @@ Organize suas tarefas de forma visual e eficiente! 🎯
 
 ## 🤝 Contribuições
 Contribuições são sempre bem-vindas!  
-Sinta-se à vontade para abrir uma [*issue*](https://github.com/NinoMiquelino/map-explorer/issues) com sugestões ou enviar um [*pull request*](https://github.com/NinoMiquelino/map-explorer/pulls) com melhorias.
+Sinta-se à vontade para abrir uma [*issue*](https://github.com/NinoMiquelino/kanban-task-manager/issues) com sugestões ou enviar um [*pull request*](https://github.com/NinoMiquelino/kanban-task-manager/pulls) com melhorias.
 
 ---
 
