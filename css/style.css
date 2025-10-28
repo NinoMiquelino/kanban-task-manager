@@ -1,0 +1,113 @@
+/* css/style.css */
+/* Estilos customizados para complementar o Tailwind */
+
+/* Animações suaves */
+.task {
+    transition: all 0.2s ease-in-out;
+}
+
+.task:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Drag & Drop visual feedback */
+.dragging {
+    transform: rotate(5deg);
+    opacity: 0.8;
+}
+
+.tasks-container.drag-over {
+    background-color: #eff6ff !important;
+    border-color: #3b82f6 !important;
+}
+
+/* Scrollbar customizada */
+.tasks-container {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.tasks-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.tasks-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.tasks-container::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+.tasks-container::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Modal animations */
+.modal-enter {
+    animation: modalEnter 0.2s ease-out;
+}
+
+@keyframes modalEnter {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Priority badges */
+.priority-high {
+    border-left-color: #ef4444;
+}
+
+.priority-medium {
+    border-left-color: #f59e0b;
+}
+
+.priority-low {
+    border-left-color: #10b981;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .tasks-container {
+        max-height: 50vh;
+    }
+    
+    #kanban-board {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Loading states */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
