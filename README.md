@@ -16,7 +16,12 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/javascript)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![License MIT](https://img.shields.io/badge/License-MIT-green)
+![Status Stable](https://img.shields.io/badge/Status-Stable-success)
+![Version 1.0.0](https://img.shields.io/badge/Version-1.0.0-blue)
+![GitHub stars](https://img.shields.io/github/stars/NinoMiquelino/kanban-task-manager?style=social)
+![GitHub forks](https://img.shields.io/github/forks/NinoMiquelino/kanban-task-manager?style=social)
+![GitHub issues](https://img.shields.io/github/issues/NinoMiquelino/kanban-task-manager)
 
 > Sistema completo de gestão de tarefas estilo Kanban com interface drag & drop intuitiva, desenvolvido com PHP e JavaScript.
 
