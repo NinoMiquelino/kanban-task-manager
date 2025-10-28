@@ -97,7 +97,7 @@ kanban-task-manager/
 │├── api.js                  # Comunicação com APIs
 │└── modal.js                # Gerenciamento de modais
 ├──🗃️ data/
-│└── database.sql            # Estrutura do banco de dados
+└└── database.sql            # Estrutura do banco de dados
 
 ```
 
