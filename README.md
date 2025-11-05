@@ -178,22 +178,22 @@ Funcionalidades Principais
 
 🎯 Gestão de Boards
 
-· Criar Board: Clique em "Novo Board" na página inicial
-· Editar Board: Acesse as configurações do board
+· Criar Board: Clique em "Novo Board" na página inicial<br>
+· Editar Board: Acesse as configurações do board<br>
 · Excluir Board: Disponível no menu de opções
 
 📋 Gestão de Tarefas
 
-· Criar Tarefa: Clique em "Adicionar Tarefa" em qualquer coluna
-· Mover Tarefa: Arraste e solte entre colunas
-· Editar Tarefa: Clique no ícone de edição
+· Criar Tarefa: Clique em "Adicionar Tarefa" em qualquer coluna<br>
+· Mover Tarefa: Arraste e solte entre colunas<br>
+· Editar Tarefa: Clique no ícone de edição<br>
 · Excluir Tarefa: Clique no ícone de lixeira
 
 🎨 Personalização
 
-· Prioridades: Selecione entre Baixa, Média e Alta
-· Cores: Cada prioridade tem cor distinta
-· Datas: Defina prazos de vencimento
+· Prioridades: Selecione entre Baixa, Média e Alta<br>
+· Cores: Cada prioridade tem cor distinta<br>
+· Datas: Defina prazos de vencimento<br>
 · Descrições: Adicione detalhes às tarefas
 
 🗃️ Estrutura do Banco de Dados
@@ -216,9 +216,9 @@ tasks (id, title, description, column_id, position, priority, due_date, created_
 
 Relacionamentos
 
-· 1:N Usuário → Boards
-· 1:N Board → Colunas
-· 1:N Coluna → Tarefas
+· 1:N Usuário → Boards<br>
+· 1:N Board → Colunas<br>
+· 1:N Coluna → Tarefas<br>
 · Cascata Exclusão em cascata para manter integridade
 
 🔧 Desenvolvimento
@@ -295,14 +295,14 @@ define('DB_PASS', 'password');         // Sua senha MySQL
 
 Drag & Drop não funciona
 
-· Verifique se o JavaScript está habilitado
-· Confirme o console do navegador para erros
+· Verifique se o JavaScript está habilitado<br>
+· Confirme o console do navegador para erros<br>
 · Teste em diferentes navegadores
 
 Tarefas não são salvas
 
-· Verifique permissões de escrita
-· Confirme a conexão com o banco
+· Verifique permissões de escrita<br>
+· Confirme a conexão com o banco<br>
 · Cheque o log de erros do PHP
 
 Logs e Debug
@@ -316,9 +316,9 @@ error_reporting(E_ALL);
 
 📋 Padrões de Código
 
-· Siga PSR-12 para PHP
-· Use JavaScript ES6+ moderno
-· Mantenha a responsividade
+· Siga PSR-12 para PHP<br>
+· Use JavaScript ES6+ moderno<br>
+· Mantenha a responsividade<br>
 · Documente novas funcionalidades
 
 🏷️ Template para Issues
@@ -342,23 +342,23 @@ error_reporting(E_ALL);
 
 Próximas Funcionalidades
 
-· Colunas Customizáveis - Usuário pode criar suas próprias colunas
-· Etiquetas e Tags - Sistema de categorização flexível
-· Comentários nas Tarefas - Discussão e colaboração
-· Anexos de Arquivos - Upload de documentos e imagens
-· Modo Escuro - Tema dark para melhor experiência
-· Notificações - Alertas para prazos próximos
-· Relatórios - Métricas e analytics dos boards
-· Exportação - PDF, Excel dos dados
-· API Pública - Integração com outros sistemas
+· Colunas Customizáveis - Usuário pode criar suas próprias colunas<br>
+· Etiquetas e Tags - Sistema de categorização flexível<br>
+· Comentários nas Tarefas - Discussão e colaboração<br>
+· Anexos de Arquivos - Upload de documentos e imagens<br>
+· Modo Escuro - Tema dark para melhor experiência<br>
+· Notificações - Alertas para prazos próximos<br>
+· Relatórios - Métricas e analytics dos boards<br>
+· Exportação - PDF, Excel dos dados<br>
+· API Pública - Integração com outros sistemas<br>
 · Templates - Boards pré-configurados
 
 Melhorias Técnicas
 
-· Testes Unitários - PHPUnit para o backend
-· Otimização de Performance - Cache e lazy loading
-· Internacionalização - Multi-idioma
-· PWA - Progressive Web App capabilities
+· Testes Unitários - PHPUnit para o backend<br>
+· Otimização de Performance - Cache e lazy loading<br>
+· Internacionalização - Multi-idioma<br>
+· PWA - Progressive Web App capabilities<br>
 · WebSockets - Atualização em tempo real verdadeiro
 
 🚀 Como Executar
@@ -379,22 +379,22 @@ php -S localhost:8000
 
 ✅ Funcionalidades Implementadas:
 
-· Sistema de autenticação completo
-· CRUD de boards e colunas
-· Drag & Drop funcional entre colunas
-· Criação e edição de tarefas
-· Sistema de prioridades com cores
-· Datas de vencimento
-· Design responsivo com Tailwind
-· APIs RESTful para todas operações
-· Validações de segurança
+· Sistema de autenticação completo<br>
+· CRUD de boards e colunas<br>
+· Drag & Drop funcional entre colunas<br>
+· Criação e edição de tarefas<br>
+· Sistema de prioridades com cores<br>
+· Datas de vencimento<br>
+· Design responsivo com Tailwind<br>
+· APIs RESTful para todas operações<br>
+· Validações de segurança<br>
 · Feedback visual durante operações
 
 🙏 Agradecimentos
 
-· Tailwind CSS pelo incrível framework CSS
-· Font Awesome pelos ícones de qualidade
-· PHP pela linguagem robusta do backend
+· Tailwind CSS pelo incrível framework CSS<br>
+· Font Awesome pelos ícones de qualidade<br>
+· PHP pela linguagem robusta do backend<br>
 · Comunidade JavaScript pelas APIs modernas
 
 ---
